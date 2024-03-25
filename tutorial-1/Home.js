@@ -6,11 +6,11 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.containerFundo} >
       <View style={styles.container}>
         <Image style={styles.logo} source={require('./assets/png.png')} />
-        <Text style={styles.title} >Lista de Contatos</Text>
+        <Text style={styles.title} >LOLLAPALOOZA 2024</Text>
       </View>
       <View style={styles.button}>
         <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('ContactList')}> 
-          <Text>Lista de Contatos</Text>
+          <Text>Lista de Atrações</Text>
         </Pressable>      
       </View>
       <View style={styles.button}>
