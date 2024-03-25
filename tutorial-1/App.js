@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AtracoesListScreen from './Atracoes';
 import ContactDetailsScreen from './ContactDetails';
+import InfoDetalhadasScreen from './InfoDetalhadas';
 import FavoritosScreen from './Favoritos';
 import HomeScreen from './Home';
 
@@ -15,7 +16,7 @@ export default function App() {
             <Stack.Screen name="Home" component={HomeScreen} />
             <Stack.Screen name="Atracoes" component={AtracoesListScreen} />
             <Stack.Screen name="Favoritos" component={FavoritosScreen} />
-            <Stack.Screen name="ContactDetails" component={ContactDetailsScreen} />
+            <Stack.Screen name="InfoDetalhadas" component={InfoDetalhadasScreen} />
         </Stack.Navigator>
     </NavigationContainer>
   );

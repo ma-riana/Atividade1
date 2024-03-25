@@ -31,7 +31,7 @@ export default function AtracoesListScreen({ navigation }) {
           <FlatList
             data={data}
             renderItem={({item}) =>
-            <TouchableOpacity onPress={ () => navigation.navigate('ContactDetails', {contact: item})}>
+            <TouchableOpacity onPress={ () => navigation.navigate('InfoDetalhadas', {contact: item})}>
               <View>
                 <Text style={styles.contact}>{item.name}</Text>
               </View>

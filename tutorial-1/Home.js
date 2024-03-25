@@ -9,8 +9,13 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.title} >LOLLAPALOOZA 2024</Text>
       </View>
       <View style={styles.button}>
-        <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('ContactList')}> 
+        <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Atracoes')}> 
           <Text>Lista de Atrações</Text>
+        </Pressable>      
+      </View>
+      <View style={styles.button}>
+        <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Favoritos')}> 
+          <Text>Favoritos</Text>
         </Pressable>      
       </View>
       <View style={styles.button}>
