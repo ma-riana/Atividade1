@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { FlatList, Image, Text, View, StyleSheet } from 'react-native';
+import { FlatList, TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 import { Avatar, Button, Card } from 'react-native-paper';
 
 export default function AtracoesListScreen({ navigation }) {
@@ -26,8 +26,16 @@ export default function AtracoesListScreen({ navigation }) {
         <Card.Title title={item.name} subtitle={item.horario}/>
         <Card.Cover style={styles.imagem} source={{ uri: item.imagem }} />
         <Card.Actions>
-          <Button style={styles.botao} color='white'>Mais informações</Button>
-          <Button style={styles.botao} color='white'>Favoritar</Button>
+            <TouchableOpacity onPress={ () => navigation.navigate('InfoDetalhadas', {contact: item})}>
+              <View>
+                <Button style={styles.botao} color='white'>Mais informações</Button>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={ () => navigation.navigate('Favoritos', {contact: item})}>
+              <View>
+              <Button style={styles.botao} color='white'>Favoritar</Button>
+              </View>
+            </TouchableOpacity>
         </Card.Actions>
       </Card>
     </View>

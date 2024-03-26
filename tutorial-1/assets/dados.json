@@ -19,80 +19,80 @@
   },
   {
     "id": 2,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "Hungria",
+    "horario": "14h30 às 15h30",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
-        "lng": "-48.553955"
+        "lat": "36.03842435440137",
+        "lng": "139.10603077586472"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0eDu7K?si=ae6c99abdf8e4522",
+    "instagram": "https://www.instagram.com/hungria_oficial",
+    "imagem": "https://s2-gq.glbimg.com/Hdwx_uyN8shL6fk4HY2TlLDBx_Y=/0x0:3508x2480/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_71a8fe14ac6d40bd993eb59f7203fe6f/internal_photos/bs/2024/r/6/O2sQnZRAKwYzrSwuDa1Q/mixcollage-24-mar-2024-02-50-pm-4776.jpg"
   },
   {
     "id": 3,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "Nothing But Thieves",
+    "horario": "16h40 às 17h40",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
+        "lat": "-40.208357",
         "lng": "-48.553955"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0JfpGo?si=7c0b48b89493458c",
+    "instagram": "https://www.instagram.com/nothingbutthieves/",
+    "imagem": "https://i.scdn.co/image/ab6761610000e5eb065faf07b0343e97bf3fba57"
   },
   {
     "id": 4,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "Phoenix",
+    "horario": "18h50 às 17h40",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
-        "lng": "-48.553955"
+        "lat": "-34.598357",
+        "lng": "-45.553955"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0RenIs?si=080a34132439415b",
+    "instagram": "https://www.instagram.com/wearephoenix/",
+    "imagem": "https://media.gq-magazine.co.uk/photos/6321b975885571856e6ed8e6/16:9/w_2560%2Cc_limit/GQ-PHOENIX-KBUITRAGO-6-cr.jpg"
   },
   {
     "id": 5,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "SZA",
+    "horario": "21h30 às 22h45",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
-        "lng": "-48.553955"
+        "lat": "-16.595347",
+        "lng": "-38.553955"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DWZ8Cy8eCcjXW?si=0dec26dd296f4c20",
+    "instagram": "https://www.instagram.com/sza",
+    "imagem": "https://s2-g1.glbimg.com/G8uUOCaG2a93-yFpJdnTnji0Wac=/0x249:1500x1334/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/8/o/1jG1hAQrK7fNHjs6VGtQ/sza1.webp"
   },
  {
     "id": 6,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "Gliberto Gil",
+    "horario": "17h45 às 18h45",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
@@ -103,14 +103,14 @@
         "lng": "-48.553955"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4nuOxW?si=eb5409586a6f457b",
+    "instagram": "https://www.instagram.com/gilbertogil",
+    "imagem": "https://gilbertogil.com.br/wp-content/uploads/2021/11/gilbertogil.com.br-gilberto-gil-6.jpg"
   },
   {
     "id": 7,
-    "name": "Benziê",
-    "horario": "12h45 às 13h25",
+    "name": "Sam Smith",
+    "horario": "",
     "endereco": {
       "nome": "Autódromo de Interlagos",
       "rua": "Av. Senador Teotônio Vilela, 261",
@@ -121,9 +121,9 @@
         "lng": "-48.553955"
       }
     },
-    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO17iDUo?si=c4431ed78f034622",
-    "instagram": "https://www.instagram.com/benzie",
-    "imagem": "https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/8613ba70fa854f66ba55472ae6c5414c~c5_750x750.image"
+    "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1rYkRG?si=bd31e458e47f46a0",
+    "instagram": "https://www.instagram.com/samsmith",
+    "imagem": "https://portalpopline.com.br/wp-content/uploads/2023/02/sam-smith-satanismo-ataques-nova-york.jpg"
   }
 ]
   
