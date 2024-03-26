@@ -2,7 +2,6 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AtracoesListScreen from './Atracoes';
-import ContactDetailsScreen from './ContactDetails';
 import InfoDetalhadasScreen from './InfoDetalhadas';
 import FavoritosScreen from './Favoritos';
 import HomeScreen from './Home';

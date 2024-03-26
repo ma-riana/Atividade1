@@ -1,55 +1,64 @@
 import React, {useState, useEffect} from 'react';
-import { Text, View, StyleSheet, Button, ActivityIndicator, ScrollView, FlatList, TouchableOpacity } from 'react-native';
+import { FlatList, Image, Text, View, StyleSheet } from 'react-native';
+import { Avatar, Button, Card } from 'react-native-paper';
 
 export default function AtracoesListScreen({ navigation }) {
   const [loading,setLoading] = useState(true);
   const [data,setData] = useState({});
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => response.json())
-      .then(json => {
-        setData(json);
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000); // Timeout de 2 segundos
-      })
-      .catch(error => {
-        console.log("Erro ao carregar os dados", error);
+    const carregarDados = async () => {
+      try {
+        const response = require('./assets/dados.json');
+        setData(response);
         setLoading(false);
-      });
-    }, []);
+      } catch (erro) {
+        console.error('Erro ao carregar os dados:', erro);
+        setLoading(false);
+      }
+    };
+    carregarDados();
+  }, []);
 
-    return(
-      <ScrollView style={styles.container}>
+  const renderItem = ({ item }) => (
+    <View style={{ marginVertical: 10 }}>
+      <Card style={styles.container}>
+        <Card.Title title={item.name} subtitle={item.horario}/>
+        <Card.Cover style={styles.imagem} source={{ uri: item.imagem }} />
+        <Card.Actions>
+          <Button style={styles.botao} color='white'>Mais informações</Button>
+          <Button style={styles.botao} color='white'>Favoritar</Button>
+        </Card.Actions>
+      </Card>
+    </View>
+  );
+
+  return (
+    <View style={{ flex: 1 }}>
       {loading ? (
-        <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#0000ff" />
-        </View>
+        <Text>Carregando...</Text>
       ) : (
-        <View>
-          <FlatList
-            data={data}
-            renderItem={({item}) =>
-            <TouchableOpacity onPress={ () => navigation.navigate('InfoDetalhadas', {contact: item})}>
-              <View>
-                <Text style={styles.contact}>{item.name}</Text>
-              </View>
-            </TouchableOpacity>}
-          />
-          <Button title="Voltar" onPress={() => navigation.navigate('Home')} />
-        </View>
+        <FlatList
+          data={data}
+          renderItem={renderItem}
+          keyExtractor={(item, index) => index.toString()}
+        />
       )}
-      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-   padding: 15
+   padding: 15,
+   margin: 10
   },
-  contact: {
+  botao: {
     fontSize: 18,
-    height: 44,
+    backgroundColor: 'gray',
+    marginRight: 4
+  },
+  imagem: {
+    borderRadius: 10
   }
 })
