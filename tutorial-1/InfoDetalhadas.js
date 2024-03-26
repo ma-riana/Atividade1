@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Button, Linking} from 'react-native';
+import { Text, View, StyleSheet, Button, Linking, Image} from 'react-native';
 import { Platform } from 'react-native';
  
 const mapUrl = Platform.select({
@@ -8,45 +8,71 @@ const mapUrl = Platform.select({
 });
 
 export default function InfoDetalhadasScreen ({ route, navigation }) {
-  const {contact} = route.params;
+  const {atracao} = route.params;
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.contactName}>{contact.name}</Text>
-        <Text style={styles.contactDetails}>E-mail: {contact.email}</Text>
-        <Text style={styles.contactDetails}>Telefone: {contact.phone}</Text>
-      </View>
-      <View style={styles.button} >
-          <Button onPress={() => Linking.openURL(`mailto:${contact.email}`) }
-            title="Enviar E-mail" />
-        </View>
+        <Text style={styles.contactName}>{atracao.name}</Text>
+        <Text style={styles.contactDetails}>{atracao.horario}</Text>
+        <Text style={styles.contactDetails}>{atracao.endereco.nome}{"\n"}{atracao.endereco.rua}</Text>
+        <Image
+          source={{ uri: atracao.imagem }}
+          style={styles.imagem}
+      />
+        <View style={styles.buttonContainer}>
         <View style={styles.button} >
-        <Button onPress={() => Linking.openURL(`tel:${contact.phone}`) }
-          title="Ligar" />
+            <Button color={'black'} onPress={() => Linking.openURL(atracao.playlist) }
+              title="Playlist no Spotify" />
+            </View>
+          <View style={styles.button} >
+          <Button color={'black'} onPress={() => Linking.openURL(atracao.instagram) }
+            title="Instagram" />
+          </View>
+          <View style={styles.button} >
+            <Button color={'black'} title="Coordenadas" onPress={() => Linking.openURL(mapUrl)} />
+          </View>
+          <View style={styles.button} >
+            <Button color={'black'} title="Voltar" onPress={() => navigation.navigate('Atracoes')} />
+          </View>
       </View>
-      <View style={styles.button} >
-        <Button title="Voltar" onPress={() => navigation.navigate('ContactList')} />
       </View>
-      <View style={styles.button} >
-        <Button title="Coordenadas" onPress={() => Linking.openURL(mapUrl)} />
-      </View>
+      
     </View>
   );
 }
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
     padding: 15,
+    margin: 35
   },
   contactName: {
-    fontSize: 18,
+    fontSize: 35,
     fontWeight: 'bold',
     height: 44,
   },
   contactDetails: {
+    fontWeight: 'bold',
+    textAlign: 'center',
     fontSize: 16,
     height: 44,
   },
+  buttonContainer: {
+    margin: 40
+  },
   button: {
-    padding: 15
+    margin: 5,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    fontSize: 16,
+    height: 44,
+    width: 230
+  },
+  imagem: {
+    width: 200, 
+    height: 200,
+    borderRadius: 100
   }
 });

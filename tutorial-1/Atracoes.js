@@ -26,7 +26,7 @@ export default function AtracoesListScreen({ navigation }) {
         <Card.Title title={item.name} subtitle={item.horario}/>
         <Card.Cover style={styles.imagem} source={{ uri: item.imagem }} />
         <Card.Actions>
-            <TouchableOpacity onPress={ () => navigation.navigate('InfoDetalhadas', {contact: item})}>
+            <TouchableOpacity onPress={ () => navigation.navigate('InfoDetalhadas', {atracao: item})}>
               <View>
                 <Button style={styles.botao} color='white'>Mais informações</Button>
               </View>
