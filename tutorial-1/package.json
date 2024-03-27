@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
+    "@react-native-async-storage/async-storage": "1.21.0",
     "@react-navigation/native": "*",
     "@react-navigation/native-stack": "*",
     "axios": "^1.6.8",
@@ -17,7 +18,8 @@
     "react-native": "0.73.6",
     "react-native-paper": "4.9.2",
     "react-native-safe-area-context": "4.8.2",
-    "react-native-screens": "~3.29.0"
+    "react-native-screens": "~3.29.0",
+    "react-native-vector-icons": "^10.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

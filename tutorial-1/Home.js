@@ -19,6 +19,11 @@ export default function HomeScreen({ navigation }) {
         </Pressable>      
       </View>
       <View style={styles.button}>
+        <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Ingresso')}> 
+          <Text>Ingresso</Text>
+        </Pressable>      
+      </View>
+      <View style={styles.button}>
         <Pressable style={styles.textoBotao} title="Sair" onPress={() => BackHandler.exitApp() }> 
           <Text>Sair</Text>
         </Pressable>
