@@ -27,8 +27,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "36.03842435440137",
-        "lng": "139.10603077586472"
+        "lat": "-27.605260",
+        "lng": "-48.573889"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0eDu7K?si=ae6c99abdf8e4522",
@@ -45,8 +45,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-40.208357",
-        "lng": "-48.553955"
+        "lat": "-27.605260",
+        "lng": "-48.573889"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0JfpGo?si=7c0b48b89493458c",
@@ -63,8 +63,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-34.598357",
-        "lng": "-45.553955"
+        "lat": "-27.508525",
+        "lng": "-48.517987"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0RenIs?si=080a34132439415b",
@@ -81,8 +81,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-16.595347",
-        "lng": "-38.553955"
+        "lat": "-27.454499",
+        "lng": "-48.448250"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DWZ8Cy8eCcjXW?si=0dec26dd296f4c20",
@@ -99,8 +99,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
-        "lng": "-48.553955"
+        "lat": "-27.452176",
+        "lng": "-48.455545"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO4nuOxW?si=eb5409586a6f457b",
@@ -117,8 +117,8 @@
       "cidade": "São Paulo",
       "cep": "04801-000",
       "geo": {
-        "lat": "-27.598357",
-        "lng": "-48.553955"
+        "lat": "-27.501863",
+        "lng": "-48.515155"
       }
     },
     "playlist": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1rYkRG?si=bd31e458e47f46a0",
