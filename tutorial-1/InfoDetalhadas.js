@@ -10,43 +10,46 @@ const mapUrl = Platform.select({
 export default function InfoDetalhadasScreen ({ route, navigation }) {
   const {atracao} = route.params;
   return (
-    <View>
-      <View style={styles.container}>
-        <Text style={styles.contactName}>{atracao.name}</Text>
-        <Text style={styles.contactDetails}>{atracao.horario}</Text>
-        <Text style={styles.contactDetails}>{atracao.endereco.nome}{"\n"}{atracao.endereco.rua}</Text>
-        <Image
-          source={{ uri: atracao.imagem }}
-          style={styles.imagem}
-      />
-        <View style={styles.buttonContainer}>
-        <View style={styles.button} >
-            <Button color={'black'} onPress={() => Linking.openURL(atracao.playlist) }
-              title="Playlist no Spotify" />
+    <View style={styles.fundo}>
+        <View style={styles.container}>
+          <Text style={styles.contactName}>{atracao.name}</Text>
+          <Text style={styles.contactDetails}>{atracao.horario}</Text>
+          <Text style={styles.contactDetails}>{atracao.endereco.nome}{"\n"}{atracao.endereco.rua}</Text>
+          <Image
+            source={{ uri: atracao.imagem }}
+            style={styles.imagem}
+          />
+          <View style={styles.buttonContainer}>
+            <View style={styles.button} >
+              <Button color={'white'} onPress={() => Linking.openURL(atracao.playlist) }
+                title="Playlist no Spotify" />
             </View>
-          <View style={styles.button} >
-          <Button color={'black'} onPress={() => Linking.openURL(atracao.instagram) }
-            title="Instagram" />
-          </View>
-          <View style={styles.button} >
-            <Button color={'black'} title="Coordenadas" onPress={() => Linking.openURL(mapUrl)} />
-          </View>
-          <View style={styles.button} >
-            <Button color={'black'} title="Voltar" onPress={() => navigation.navigate('Atracoes')} />
+            <View style={styles.button} >
+            <Button color={'white'} onPress={() => Linking.openURL(atracao.instagram) }
+              title="Instagram" />
+            </View>
+            <View style={styles.button} >
+              <Button color={'white'} title="Coordenadas" onPress={() => Linking.openURL(mapUrl)} />
+            </View>
+            <View style={styles.button} >
+              <Button color={'white'} title="Voltar" onPress={() => navigation.navigate('Atracoes')} />
+            </View>
           </View>
       </View>
-      </View>
-      
-    </View>
+  </View>
   );
 }
 const styles = StyleSheet.create({
+  fundo: {
+    flex: 1,
+    backgroundColor: 'lightblue'
+  },
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'flex-start',
     padding: 15,
-    margin: 35
+    margin: 35,
   },
   contactName: {
     fontSize: 35,
@@ -64,7 +67,7 @@ const styles = StyleSheet.create({
   },
   button: {
     margin: 5,
-    backgroundColor: 'white',
+    backgroundColor: '#fc4133',
     borderRadius: 10,
     fontSize: 16,
     height: 44,

@@ -5,27 +5,26 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.containerFundo} >
       <View style={styles.container}>
-        <Image style={styles.logo} source={require('./assets/png.png')} />
-        <Text style={styles.title} >LOLLAPALOOZA 2024</Text>
+        <Image style={styles.logo} source={require('./assets/lollaHome.png')} />
       </View>
       <View style={styles.button}>
         <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Atracoes')}> 
-          <Text>Lista de Atrações</Text>
+          <Text style={styles.texto}>Lista de Atrações</Text>
         </Pressable>      
       </View>
       <View style={styles.button}>
         <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Favoritos')}> 
-          <Text>Favoritos</Text>
+          <Text style={styles.texto}>Favoritos</Text>
         </Pressable>      
       </View>
       <View style={styles.button}>
         <Pressable style={styles.textoBotao} onPress={() => navigation.navigate('Ingresso')}> 
-          <Text>Ingresso</Text>
+          <Text style={styles.texto}>Ingresso</Text>
         </Pressable>      
       </View>
       <View style={styles.button}>
         <Pressable style={styles.textoBotao} title="Sair" onPress={() => BackHandler.exitApp() }> 
-          <Text>Sair</Text>
+          <Text style={styles.texto}>Sair</Text>
         </Pressable>
       </View>
     </View>
@@ -35,7 +34,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   containerFundo: {
     flex: 1,
-    backgroundColor: 'lightgray'
+    backgroundColor: 'lightblue'
   },
   container: {
     alignItems: 'center',
@@ -43,8 +42,8 @@ const styles = StyleSheet.create({
     padding: 60,
   },
   logo: {
-    height: 160,
-    width: 160,
+    height: 250,
+    width: 250,
   },
   title: {
     padding: 30,
@@ -54,11 +53,14 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 8,
     color: 'black',
-    backgroundColor: "lightgreen",
+    backgroundColor: "#fc4133",
     borderRadius: 15
   },
   textoBotao: {
-    alignItems: 'center',
-    color: 'black'
+    alignItems: 'center'
+  },
+  texto: {
+    color: 'white',
+    fontWeight: 'bold'
   }
 });

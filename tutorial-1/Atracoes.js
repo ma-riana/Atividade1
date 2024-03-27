@@ -72,7 +72,7 @@ export default function AtracoesListScreen({ navigation }) {
   );
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.fundo}>
       {loading ? (
         <Text>Carregando...</Text>
       ) : (
@@ -87,6 +87,10 @@ export default function AtracoesListScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  fundo: {
+    flex: 1,
+    backgroundColor: 'lightblue'
+  },
   container: {
     padding: 15,
     margin: 10

@@ -37,7 +37,7 @@ export default function Favoritos({ navigation }) {
   );
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.fundo}>
       {favoritos.length === 0 ? (
         <View style={styles.containerSemItens}>
           <Text style={styles.titulo}>Não há itens favoritados</Text>
@@ -54,6 +54,9 @@ export default function Favoritos({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  fundo: {
+    backgroundColor: 'lightblue'
+  },
   container: {
     padding: 15,
     margin: 10
