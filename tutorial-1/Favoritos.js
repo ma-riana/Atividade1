@@ -55,6 +55,7 @@ export default function Favoritos({ navigation }) {
 
 const styles = StyleSheet.create({
   fundo: {
+    flex: 1,
     backgroundColor: 'lightblue'
   },
   container: {
@@ -73,7 +74,9 @@ const styles = StyleSheet.create({
   },
   botao: {
     fontSize: 18,
-    backgroundColor: 'gray',
+    backgroundColor: "#fc4133",
+    marginRight: 25,
+    width: 280,
     marginRight: 4
   },
   imagem: {

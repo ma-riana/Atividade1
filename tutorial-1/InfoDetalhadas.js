@@ -70,8 +70,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fc4133',
     borderRadius: 10,
     fontSize: 16,
-    height: 44,
-    width: 230
+    height: 44
   },
   imagem: {
     width: 200, 

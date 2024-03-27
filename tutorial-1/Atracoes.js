@@ -97,8 +97,9 @@ const styles = StyleSheet.create({
   },
   botao: {
     fontSize: 18,
-    backgroundColor: 'gray',
+    backgroundColor: "#fc4133",
     marginRight: 25,
+    width: 280
   },
   botoes: {
     justifyContent: 'center',

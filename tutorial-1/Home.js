@@ -34,6 +34,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   containerFundo: {
     flex: 1,
+    alignItems: 'center',
     backgroundColor: 'lightblue'
   },
   container: {
@@ -54,13 +55,16 @@ const styles = StyleSheet.create({
     margin: 8,
     color: 'black',
     backgroundColor: "#fc4133",
-    borderRadius: 15
+    borderRadius: 15,
+    height: 44,
+    width: 300
   },
   textoBotao: {
     alignItems: 'center'
   },
   texto: {
     color: 'white',
+    fontSize: 20,
     fontWeight: 'bold'
   }
 });
