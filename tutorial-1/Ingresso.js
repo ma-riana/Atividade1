@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { FlatList, TouchableOpacity, Text, View, StyleSheet, Linking } from 'react-native';
 import { Avatar, Button, Card } from 'react-native-paper';
 
-export default function AtracoesListScreen({ navigation }) {
+export default function IngressoScreen({ navigation }) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 

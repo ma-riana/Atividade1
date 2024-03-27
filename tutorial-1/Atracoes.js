@@ -32,12 +32,10 @@ export default function AtracoesListScreen({ navigation }) {
     const atracaoIndex = favoritos.findIndex((atracao) => atracao.name === item.name);
 
     if (atracaoIndex === -1) {
-      // Adiciona à lista de favoritos
       const atracaoFavoritada = [...favoritos, item];
       setFavoritos(atracaoFavoritada);
       await AsyncStorage.setItem('favoritos', JSON.stringify(atracaoFavoritada));
     } else {
-      // Remove da lista de favoritos
       const atracaoFavoritada = favoritos.filter((atracao) => atracao.name !== item.name);
       setFavoritos(atracaoFavoritada);
       await AsyncStorage.setItem('favoritos', JSON.stringify(atracaoFavoritada));

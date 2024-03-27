@@ -49,18 +49,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     padding: 15,
-    margin: 35,
+    margin: 35
   },
   contactName: {
     fontSize: 35,
     fontWeight: 'bold',
-    height: 44,
+    height: 44
   },
   contactDetails: {
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 16,
-    height: 44,
+    height: 44
   },
   buttonContainer: {
     margin: 40
@@ -70,7 +70,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fc4133',
     borderRadius: 10,
     fontSize: 16,
-    height: 44
+    height: 44,
+    width: 200
   },
   imagem: {
     width: 200, 
