@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Button, Linking, Image} from 'react-native';
 import { Platform } from 'react-native';
- 
-const mapUrl = Platform.select({
-   ios: "maps:0,0?q=latitude,longitude",
-   android: "geo:0,0?q=latitude,longitude"
-});
 
 export default function InfoDetalhadasScreen ({ route, navigation }) {
   const {atracao} = route.params;
+
+  const mapUrl = Platform.select({
+    ios: `maps:0,0?q=${atracao.endereco.geo.lat},${atracao.endereco.geo.lng}`,
+    android: `geo:0,0?q=${atracao.endereco.geo.lat},${atracao.endereco.geo.lng}`
+ });
+ 
   return (
     <View style={styles.fundo}>
         <View style={styles.container}>
@@ -29,7 +30,7 @@ export default function InfoDetalhadasScreen ({ route, navigation }) {
               title="Instagram" />
             </View>
             <View style={styles.button} >
-              <Button color={'white'} title="Coordenadas" onPress={() => Linking.openURL(mapUrl)} />
+              <Button color={'white'} title="Coordenadas" onPress={() => Linking.openURL(`${mapUrl}`)} />
             </View>
             <View style={styles.button} >
               <Button color={'white'} title="Voltar" onPress={() => navigation.navigate('Atracoes')} />
