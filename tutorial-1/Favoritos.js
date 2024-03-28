@@ -1,12 +1,13 @@
-import * as React from 'react';
+// import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FlatList, TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 import { Avatar, Button, Card } from 'react-native-paper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Favoritos({ navigation }) {
-  const [favoritos, setFavoritos] = React.useState([]);
+  const [favoritos, setFavoritos] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const carregarFavoritos = async () => {
       try {
         const favoritosArmazenados = await AsyncStorage.getItem('favoritos');
