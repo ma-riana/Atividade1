@@ -22,11 +22,6 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.texto}>Ingresso</Text>
         </Pressable>      
       </View>
-      <View style={styles.button}>
-        <Pressable style={styles.textoBotao} title="Sair" onPress={() => BackHandler.exitApp() }> 
-          <Text style={styles.texto}>Sair</Text>
-        </Pressable>
-      </View>
     </View>
   );
 }

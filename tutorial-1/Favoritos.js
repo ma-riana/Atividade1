@@ -1,4 +1,3 @@
-// import * as React from 'react';
 import React, { useState, useEffect } from 'react';
 import { FlatList, TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 import { Avatar, Button, Card } from 'react-native-paper';
